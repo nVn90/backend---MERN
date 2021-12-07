@@ -5,7 +5,7 @@ exports.getCategoryById = (req, res, next, id) => {
     if (err) {
       return res.status(400).json({
         err: "Category not found in DB",
-      });
+      }); 
     }
     req.category = category;
     next();
